@@ -47,7 +47,7 @@
       <section class="hero-section overlay">
         <div class="container hero">
         <h1 class="hero-header">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button type="button" class="hero-button">Заказать услугу</button>
+        <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
     </div>
       </section>
 
@@ -110,17 +110,29 @@
         <h2 class="second-h">Чем мы занимаемся</h2>
         <ul class="wwd-flex">
           <li class="wwd-item">
-            <img src="./img/what_1.jpg" alt="Клавиатура, планшет, монитор" width="370" />
+            <div class="wwd-overlay">
+              <img src="./img/what_1.jpg" alt="Клавиатура, планшет, монитор" width="370" />
+            <h3 class="wwd-content">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
+          
+          </div>
           </li>
           <li class="wwd-item">
+              <div class="wwd-overlay">
             <img
               src="./img/what_2.jpg"
               alt="Девушка держит телефон, сидит за ноутбуком"
               width="370"
             />
+            <h3 class="wwd-content">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+          
+          </div>
           </li>
           <li class="wwd-item">
+              <div class="wwd-overlay">
             <img src="./img/what_3.jpg" alt="Цветовая палитра изображена в планшете" width="370" />
+            <h3 class="wwd-content">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
+          
+          </div>
           </li>
         </ul>
         </div>
@@ -388,5 +400,15 @@
      </ul></div>
       </section>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="exit-button" data-modal-close>
+          <svg height="11px" width="11px">
+            <use href="./img/icons/symbol-defs.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
