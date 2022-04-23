@@ -130,7 +130,7 @@ body {
 .main-menu-m::after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   content: '';
   display: block;
   width: 100%;
@@ -250,6 +250,10 @@ body {
 }
 .wwd-content {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
   width: 100%;
   left: 0;
   bottom: 0;
@@ -259,11 +263,8 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding-top: 27px;
-  padding-bottom: 27px;
 }
 .wwd-item {
   margin-right: 30px;
